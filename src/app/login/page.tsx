@@ -58,7 +58,7 @@ export default function LoginPage() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <label className="text-[12px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--text-dim)" }}>Password</label>
-                  <Link href="/forgot-password" size={12} className="text-[12px] font-semibold hover:text-gold transition-colors" style={{ color: "var(--gold)" }}>Forgot Password?</Link>
+                  <Link href="/forgot-password" className="text-[12px] font-semibold hover:text-gold transition-colors" style={{ color: "var(--gold)" }}>Forgot Password?</Link>
                 </div>
                 <div className="relative group">
                   <Lock className="absolute left-4 top-1/2 -translate-y-1/2 transition-colors group-focus-within:text-gold" size={18} style={{ color: "var(--text-dim)" }} />
@@ -102,11 +102,11 @@ export default function LoginPage() {
 
           <div className="grid grid-cols-2 gap-4">
             <button className="h-12 rounded-sm border flex items-center justify-center gap-3 transition-all hover:bg-white/5" style={{ borderColor: "var(--border)", color: "var(--text)" }}>
-              <Image src="https://www.google.com/favicon.ico" width={16} height={16} className="grayscale" alt="Google" />
+              <Image src="/images/icons/google.svg" width={18} height={18} alt="Google" />
               <span className="text-[13px] font-semibold">Google</span>
             </button>
             <button className="h-12 rounded-sm border flex items-center justify-center gap-3 transition-all hover:bg-white/5" style={{ borderColor: "var(--border)", color: "var(--text)" }}>
-              <Image src="https://www.apple.com/favicon.ico" width={16} height={16} className="grayscale invert" alt="Apple" />
+              <Image src="/images/icons/apple.svg" width={18} height={18} className="mb-0.5" alt="Apple" />
               <span className="text-[13px] font-semibold">Apple</span>
             </button>
           </div>
