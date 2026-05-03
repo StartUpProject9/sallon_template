@@ -77,15 +77,18 @@ Open `/src/app/layout.tsx` to update the site title, description, and meta tags 
 ## 5. Deployment Guide
 When you are ready to launch your site:
 
-1. **Build the Project**:
-   ```bash
-   npm run build
-   ```
-2. **Deploy to Vercel (Recommended)**:
-   - Connect your GitHub repository to Vercel.
-   - Vercel will automatically detect the Next.js settings and deploy.
-3. **Self-Hosting**:
-   - You can run the production build using `npm run start` on any VPS with Node.js.
+### Deploying to Netlify (Recommended)
+1. **Push your code to GitHub**: Create a repository and push all files.
+2. **Connect to Netlify**:
+   - Log in to your Netlify account.
+   - Click "Add new site" and select "Import an existing project".
+   - Connect to GitHub and select this repository.
+   - Netlify will automatically read the `netlify.toml` file included in this template.
+3. **Finish**: Click "Deploy site" and wait for the build to complete.
+
+### Deploying to Vercel
+1. Connect your GitHub repository to Vercel.
+2. Vercel will detect Next.js and deploy automatically.
 
 ---
 

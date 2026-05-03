@@ -96,6 +96,22 @@ src/
     npm run start
     ```
 
+## 🌐 Deployment Guide
+When you are ready to launch your site:
+
+### Deploy to Netlify (Recommended for this template)
+1. **Push to GitHub**: Create a new repository on GitHub and push your code.
+2. **Connect to Netlify**:
+   - Log in to [Netlify](https://www.netlify.com/).
+   - Click **"Add new site"** > **"Import an existing project"**.
+   - Select **GitHub** and choose your repository.
+   - Netlify will automatically detect the settings from the `netlify.toml` file we've included.
+3. **Deploy**: Click **"Deploy site"**. Your premium salon will be live in minutes!
+
+### Alternative: Deploy to Vercel
+1. Connect your GitHub repository to [Vercel](https://vercel.com/).
+2. Vercel will automatically detect the Next.js settings and deploy.
+
 ---
 
 ## 🎨 Customization Guide
