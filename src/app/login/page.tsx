@@ -58,7 +58,7 @@ export default function LoginPage() {
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
                   <label className="text-[12px] font-bold uppercase tracking-[0.1em]" style={{ color: "var(--text-dim)" }}>Password</label>
-                  <Link href="/forgot-password" size={12} className="text-[12px] font-semibold hover:text-gold transition-colors" style={{ color: "var(--gold)" }}>Forgot Password?</Link>
+                  <Link href="/forgot-password" className="text-[12px] font-semibold hover:text-gold transition-colors" style={{ color: "var(--gold)" }}>Forgot Password?</Link>
                 </div>
                 <div className="relative group">
                   <Lock className="absolute left-4 top-1/2 -translate-y-1/2 transition-colors group-focus-within:text-gold" size={18} style={{ color: "var(--text-dim)" }} />
