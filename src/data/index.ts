@@ -13,6 +13,7 @@ export const NAV_LINKS: NavLink[] = [
   { label: "Services", href: "/services" },
   { label: "Book Now", href: "/booking" },
   { label: "Dashboard", href: "/dashboard" },
+  { label: "Sign In", href: "/login" },
 ];
 
 // ─── Services Data ────────────────────────────────────────────────────────────
