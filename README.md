@@ -1,67 +1,116 @@
-# Luxe Salon — Premium Booking System Template
+# Aurore Luxe Salon — Premium Next.js 15 Booking System Template
 
-A high-quality, professional, and luxurious Salon Booking System frontend template built with **Next.js 15**, **TypeScript**, and **Tailwind CSS**. Designed for marketplace distribution on platforms like Codester or ThemeForest.
+![Luxe Salon Hero](/public/images/hero.png)
 
-## ✨ Features
+Aurore is an ultra-premium, modern, and high-performance **Salon Booking System** frontend template. Designed for luxury hair salons, spas, and wellness centers, it provides a seamless user experience with a sophisticated aesthetic of Deep Black, Pure White, and Premium Gold.
 
-- **Premium Aesthetics**: A sophisticated palette of Deep Black, Pure White, and Premium Gold (#D4AF37).
-- **Responsive Design**: Mobile-first architecture ensuring a seamless experience across all devices.
-- **Multi-step Booking**: A logical 4-step booking flow (Service → Stylist → Time → Details).
-- **User Dashboard**: Professional interface for clients to manage their appointments.
-- **Animations**: Subtle, smooth micro-interactions powered by Framer Motion.
-- **SEO Optimized**: Pre-configured metadata and semantic HTML structure.
-- **Scalable Architecture**: Clean folder structure and strongly typed components.
+Built with the latest technologies (**Next.js 15**, **React 19**, **Tailwind CSS 4**, and **TypeScript**), this template is optimized for speed, SEO, and marketplace distribution on platforms like **Codester**.
 
-## 🛠️ Tech Stack
+---
 
-- **Framework**: Next.js 15 (App Router)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Icons**: Lucide React
-- **Animations**: Framer Motion
-- **Fonts**: Playfair Display (Headings), Inter (Body), Cormorant Garamond (Accents)
+## ✨ Key Features
+
+### 💎 Premium Design & UX
+- **Luxury Aesthetics**: Curated color palette with gold accents (#D4AF37).
+- **Glassmorphism & Gradients**: Modern UI elements with subtle transparency and smooth transitions.
+- **Fully Responsive**: Mobile-first architecture ensures a perfect look on iPhones, Androids, and iPads.
+- **Micro-Animations**: Smooth, professional interactions powered by **Framer Motion**.
+
+### 🗓️ Advanced Booking System
+- **Logical 4-Step Flow**:
+    1. **Service**: Select from categorized treatments (Hair, Skin, Nails, Wellness).
+    2. **Stylist**: Choose from master artisans with detailed bios and ratings.
+    3. **Date & Time**: Real-time availability simulation with morning/afternoon slots.
+    4. **Confirmation**: Final review with personal details capture.
+
+### 👤 User Dashboard & Auth
+- **Client Dashboard**: A centralized hub for managing upcoming, completed, and canceled appointments.
+- **Professional Auth Pages**: High-end Login and Registration pages with split-screen layouts.
+- **Form Validation**: Clean, user-friendly input handling.
+
+### 🛠️ Developer Excellence
+- **Next.js 15 App Router**: Utilizing the latest React Server Components and optimized routing.
+- **Tailwind CSS 4**: Semantic design tokens using CSS variables for effortless branding updates.
+- **Strongly Typed**: 100% TypeScript coverage for a robust development experience.
+- **Local Assets**: All images are bundled locally — no external dependencies or broken links.
+
+---
+
+## 🚀 Tech Stack
+
+- **Framework**: [Next.js 15+](https://nextjs.org/)
+- **Library**: [React 19+](https://react.dev/)
+- **Styling**: [Tailwind CSS 4](https://tailwindcss.com/)
+- **Animations**: [Framer Motion](https://www.framer.com/motion/)
+- **Icons**: [Lucide React](https://lucide.dev/)
+- **Typography**: Playfair Display (Headings), Inter (Body), Cormorant Garamond (Accents)
+
+---
 
 ## 📁 Project Structure
 
 ```text
 src/
-├── app/                  # Next.js App Router Pages
-│   ├── booking/          # Multi-step booking flow
-│   ├── dashboard/        # User appointment management
-│   ├── services/         # Category-based service listing
-│   └── globals.css       # Design tokens & Global styles
-├── components/           # Reusable UI Components
-│   ├── home/             # Landing page specific sections
-│   ├── layout/           # Navbar, Footer
-│   ├── dashboard/        # Dashboard specific components
-│   └── shared/           # Cross-page UI elements (Cards, Headers)
-├── data/                 # Mock data for demonstration
-└── types/                # TypeScript Interface definitions
+├── app/                  # Next.js App Router (Pages & API)
+│   ├── booking/          # Multi-step booking engine
+│   ├── dashboard/        # Customer account management
+│   ├── services/         # Category-based treatments
+│   ├── contact/          # Professional contact interface
+│   ├── login/            # Auth pages (Login)
+│   ├── register/         # Auth pages (Signup)
+│   └── globals.css       # Design System & Utility tokens
+├── components/           # Reusable UI Architecture
+│   ├── home/             # Hero, Featured Services, Testimonials
+│   ├── layout/           # Global Navbar & Luxury Footer
+│   ├── dashboard/        # Appointment cards & Stats
+│   └── shared/           # Modular UI (Cards, Toggles, Headers)
+├── data/                 # Centralized Mock Data (Services, Stylists, etc.)
+├── types/                # Strict TypeScript Interface definitions
+└── providers/            # Context Providers (Theme, Auth simulation)
 ```
 
-## 🚀 Getting Started
+---
 
-1. **Install dependencies**:
-   ```bash
-   npm install
-   ```
+## ⚙️ Installation & Setup
 
-2. **Run the development server**:
-   ```bash
-   npm run dev
-   ```
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/your-username/aurore-luxe-salon.git
+    cd aurore-luxe-salon
+    ```
 
-3. **Build for production**:
-   ```bash
-   npm run build
-   ```
+2.  **Install Dependencies**:
+    ```bash
+    npm install
+    ```
 
-## 🎨 Customization
+3.  **Run Development Server**:
+    ```bash
+    npm run dev
+    ```
+    Access the app at `http://localhost:3000`.
 
-- **Colors**: Update the brand palette in `tailwind.config.ts`.
-- **Mock Data**: Modify `src/data/index.ts` to change services, stylists, or testimonials.
-- **SEO**: Edit metadata in `src/app/layout.tsx`.
+4.  **Build for Production**:
+    ```bash
+    npm run build
+    npm run start
+    ```
+
+---
+
+## 🎨 Customization Guide
+
+- **Brand Colors**: Open `src/app/globals.css` to modify the CSS variables (e.g., `--gold`, `--bg`, `--surface`).
+- **Content Updates**: All services, stylists, and testimonials are located in `src/data/index.ts`. Update this file to change your pricing, descriptions, and team members.
+- **SEO & Metadata**: Edit `src/app/layout.tsx` to update the site title, description, and favicon.
+
+---
 
 ## 📄 License
 
-Professional Template — Created for Codester/Marketplace Distribution.
+Premium Template — Created for marketplace distribution. All rights reserved.
+For support or customization requests, please contact [your-email@example.com].
+
+---
+
+*Handcrafted with ❤️ for the Beauty Industry.*

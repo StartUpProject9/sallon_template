@@ -24,15 +24,17 @@ export function ThemeProvider({ children }: { children: ReactNode }) {
 
   // On mount, read saved preference or system preference
   useEffect(() => {
-    const saved = localStorage.getItem("luxe-theme") as Theme | null;
-    if (saved === "light" || saved === "dark") {
-      setTheme(saved);
-    } else {
-      // Respect system preference
-      const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-      setTheme(prefersDark ? "dark" : "light");
-    }
-    setMounted(true);
+    const initTheme = () => {
+      const saved = localStorage.getItem("luxe-theme") as Theme | null;
+      if (saved === "light" || saved === "dark") {
+        setTheme(saved);
+      } else {
+        const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        setTheme(prefersDark ? "dark" : "light");
+      }
+      setMounted(true);
+    };
+    initTheme();
   }, []);
 
   // Apply .dark class to <html> whenever theme changes

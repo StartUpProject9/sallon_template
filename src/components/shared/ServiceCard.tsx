@@ -1,6 +1,7 @@
 "use client";
 
 import { Clock, Star } from "lucide-react";
+import Image from "next/image";
 import type { ServiceCardProps } from "@/types";
 
 const CATEGORY_STYLES: Record<string, { color: string; bg: string; border: string }> = {
@@ -29,10 +30,11 @@ export default function ServiceCard({ service, selected, onSelect }: ServiceCard
       {/* Image if provided */}
       {service.image && (
         <div className="relative aspect-video overflow-hidden">
-          <img
+          <Image
             src={service.image}
             alt={service.name}
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            fill
+            className="object-cover transition-transform duration-700 group-hover:scale-110"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         </div>

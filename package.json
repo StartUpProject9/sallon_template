@@ -1,7 +1,8 @@
 {
-  "name": "sallon_template",
-  "version": "0.1.0",
-  "private": true,
+  "name": "aurore-luxe-salon-nextjs-template",
+  "version": "1.0.0",
+  "description": "Premium Salon Booking System Template built with Next.js 15, Tailwind CSS, and TypeScript.",
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",

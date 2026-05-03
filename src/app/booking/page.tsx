@@ -35,8 +35,7 @@ export default function BookingPage() {
     setTimeout(() => { setSubmitting(false); setSuccess(true); }, 1800);
   };
 
-  // Shared back button
-  const BackBtn = () => (
+  const renderBackBtn = () => (
     <button
       onClick={back}
       className="w-9 h-9 rounded flex items-center justify-center transition-all"
@@ -118,7 +117,7 @@ export default function BookingPage() {
           {/* Step 2 */}
           {step === 2 && (
             <motion.div key="s2" initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }}>
-              <div className="flex items-center gap-4 mb-8"><BackBtn /><h2 className="font-display text-[1.75rem]" style={{ color: "var(--text)" }}>Choose Your Artist</h2></div>
+              <div className="flex items-center gap-4 mb-8">{renderBackBtn()}<h2 className="font-display text-[1.75rem]" style={{ color: "var(--text)" }}>Choose Your Artist</h2></div>
               <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {STYLISTS.map((s) => <StylistCard key={s.id} stylist={s} selected={draft.stylist?.id === s.id} onSelect={pickStylist} />)}
               </div>
@@ -128,7 +127,7 @@ export default function BookingPage() {
           {/* Step 3 */}
           {step === 3 && (
             <motion.div key="s3" initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }}>
-              <div className="flex items-center gap-4 mb-8"><BackBtn /><h2 className="font-display text-[1.75rem]" style={{ color: "var(--text)" }}>Date & Time</h2></div>
+              <div className="flex items-center gap-4 mb-8">{renderBackBtn()}<h2 className="font-display text-[1.75rem]" style={{ color: "var(--text)" }}>Date & Time</h2></div>
               <div className="grid lg:grid-cols-3 gap-8">
                 <div className="lg:col-span-2 space-y-5">
                   {/* Calendar */}
@@ -222,7 +221,7 @@ export default function BookingPage() {
           {/* Step 4 */}
           {step === 4 && (
             <motion.div key="s4" initial={{ opacity: 0, x: 16 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -16 }}>
-              <div className="flex items-center gap-4 mb-8"><BackBtn /><h2 className="font-display text-[1.75rem]" style={{ color: "var(--text)" }}>Your Details</h2></div>
+              <div className="flex items-center gap-4 mb-8">{renderBackBtn()}<h2 className="font-display text-[1.75rem]" style={{ color: "var(--text)" }}>Your Details</h2></div>
               <div className="grid lg:grid-cols-5 gap-10">
                 <form onSubmit={handleSubmit} className="lg:col-span-3 space-y-5">
                   <div className="grid grid-cols-2 gap-4">

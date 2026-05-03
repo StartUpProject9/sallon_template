@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Mail, Lock, Eye, EyeOff, Scissors } from "lucide-react";
+import Image from "next/image";
 
 export default function LoginPage() {
   const [showPassword, setShowPassword] = useState(false);
@@ -101,11 +102,11 @@ export default function LoginPage() {
 
           <div className="grid grid-cols-2 gap-4">
             <button className="h-12 rounded-sm border flex items-center justify-center gap-3 transition-all hover:bg-white/5" style={{ borderColor: "var(--border)", color: "var(--text)" }}>
-              <img src="https://www.google.com/favicon.ico" className="w-4 h-4 grayscale" alt="Google" />
+              <Image src="https://www.google.com/favicon.ico" width={16} height={16} className="grayscale" alt="Google" />
               <span className="text-[13px] font-semibold">Google</span>
             </button>
             <button className="h-12 rounded-sm border flex items-center justify-center gap-3 transition-all hover:bg-white/5" style={{ borderColor: "var(--border)", color: "var(--text)" }}>
-              <img src="https://www.apple.com/favicon.ico" className="w-4 h-4 grayscale invert" alt="Apple" />
+              <Image src="https://www.apple.com/favicon.ico" width={16} height={16} className="grayscale invert" alt="Apple" />
               <span className="text-[13px] font-semibold">Apple</span>
             </button>
           </div>
@@ -119,13 +120,12 @@ export default function LoginPage() {
 
       {/* Right Side: Image/Branding */}
       <div className="hidden lg:block lg:w-[55%] relative overflow-hidden bg-surface-2">
-        <motion.img
-          initial={{ scale: 1.1 }}
-          animate={{ scale: 1 }}
-          transition={{ duration: 1.5, ease: [0.22, 1, 0.36, 1] }}
+        <Image
           src="/images/hero.png"
-          className="absolute inset-0 w-full h-full object-cover"
           alt="Luxury Salon Background"
+          fill
+          priority
+          className="object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-[var(--bg)] via-transparent to-transparent" />
         <div className="absolute inset-0 bg-black/20" />
