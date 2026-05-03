@@ -49,6 +49,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 45,
     price: 80,
     category: "hair",
+    image: "/images/services/hair.jpg",
   },
   {
     id: "hair-004",
@@ -58,6 +59,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 180,
     price: 350,
     category: "hair",
+    image: "/images/services/hair_2.jpg",
   },
   // Skin
   {
@@ -79,6 +81,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 90,
     price: 200,
     category: "skin",
+    image: "/images/services/skin.jpg",
   },
   {
     id: "skin-003",
@@ -88,6 +91,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 60,
     price: 130,
     category: "skin",
+    image: "/images/services/skin.jpg",
   },
   {
     id: "skin-004",
@@ -97,6 +101,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 75,
     price: 160,
     category: "skin",
+    image: "/images/services/skin.jpg",
   },
   // Nails
   {
@@ -118,6 +123,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 75,
     price: 85,
     category: "nails",
+    image: "/images/services/nails.jpg",
   },
   {
     id: "nails-003",
@@ -127,6 +133,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 90,
     price: 100,
     category: "nails",
+    image: "/images/services/nails.jpg",
   },
   {
     id: "nails-004",
@@ -136,6 +143,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 120,
     price: 120,
     category: "nails",
+    image: "/images/services/hair_2.jpg",
   },
   // Wellness
   {
@@ -146,6 +154,7 @@ export const SERVICES: ServiceOption[] = [
     duration: 45,
     price: 70,
     category: "wellness",
+    image: "/images/services/wellness.jpg",
   },
   {
     id: "wellness-002",
@@ -231,7 +240,7 @@ export const STYLISTS: Stylist[] = [
     role: "Nail Artist & Technician",
     specialties: ["nails"],
     bio: "Zara transforms nails into miniature works of art. Her intricate designs and impeccable technique have earned a loyal following.",
-    image: "/images/stylists/zara.jpg",
+    image: "/images/stylists/isabelle.jpg",
     rating: 4.7,
     reviewCount: 198,
     experience: 7,
