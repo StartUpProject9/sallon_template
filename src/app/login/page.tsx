@@ -102,11 +102,11 @@ export default function LoginPage() {
 
           <div className="grid grid-cols-2 gap-4">
             <button className="h-12 rounded-sm border flex items-center justify-center gap-3 transition-all hover:bg-white/5" style={{ borderColor: "var(--border)", color: "var(--text)" }}>
-              <Image src="https://www.google.com/favicon.ico" width={16} height={16} className="grayscale" alt="Google" />
+              <Image src="/images/icons/google.svg" width={18} height={18} alt="Google" />
               <span className="text-[13px] font-semibold">Google</span>
             </button>
             <button className="h-12 rounded-sm border flex items-center justify-center gap-3 transition-all hover:bg-white/5" style={{ borderColor: "var(--border)", color: "var(--text)" }}>
-              <Image src="https://www.apple.com/favicon.ico" width={16} height={16} className="grayscale invert" alt="Apple" />
+              <Image src="/images/icons/apple.svg" width={18} height={18} className="mb-0.5" alt="Apple" />
               <span className="text-[13px] font-semibold">Apple</span>
             </button>
           </div>
