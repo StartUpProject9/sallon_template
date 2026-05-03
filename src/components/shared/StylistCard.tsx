@@ -24,10 +24,12 @@ export default function StylistCard({ stylist, selected, onSelect }: StylistCard
           style={{ background: "linear-gradient(to top, var(--surface) 0%, transparent 60%)" }}
         />
 
-        {/* Placeholder */}
-        <div className="absolute inset-0 flex items-center justify-center text-[13px] italic" style={{ color: "var(--text-dim)" }}>
-          {stylist.name}
-        </div>
+        {/* Image */}
+        <img
+          src={stylist.image}
+          alt={stylist.name}
+          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+        />
 
         {/* Featured badge */}
         {stylist.featured && (

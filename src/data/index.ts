@@ -28,6 +28,7 @@ export const SERVICES: ServiceOption[] = [
     price: 120,
     category: "hair",
     popular: true,
+    image: "/images/services/hair.jpg",
   },
   {
     id: "hair-002",
@@ -38,6 +39,7 @@ export const SERVICES: ServiceOption[] = [
     price: 220,
     category: "hair",
     popular: true,
+    image: "/images/services/hair.jpg",
   },
   {
     id: "hair-003",
@@ -67,6 +69,7 @@ export const SERVICES: ServiceOption[] = [
     price: 150,
     category: "skin",
     popular: true,
+    image: "/images/services/skin.jpg",
   },
   {
     id: "skin-002",
@@ -105,6 +108,7 @@ export const SERVICES: ServiceOption[] = [
     price: 65,
     category: "nails",
     popular: true,
+    image: "/images/services/nails.jpg",
   },
   {
     id: "nails-002",
@@ -152,6 +156,7 @@ export const SERVICES: ServiceOption[] = [
     price: 95,
     category: "wellness",
     popular: true,
+    image: "/images/services/wellness.jpg",
   },
 ];
 
@@ -286,6 +291,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     text: "Luxe Salon has completely transformed my relationship with my hair. Isabelle understood exactly what I wanted — the balayage she created is absolutely flawless. The booking experience was seamless and the salon atmosphere is divine.",
     service: "Balayage & Highlights",
+    avatar: "/images/avatars/avatar1.jpg",
     date: "2024-11-15",
   },
   {
@@ -295,6 +301,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     text: "Sophia's Radiance Facial left my skin glowing for weeks. I've been to many high-end spas but nothing compares to the personalised care here. Already booked my next three appointments!",
     service: "Radiance Facial",
+    avatar: "/images/avatars/avatar2.jpg",
     date: "2024-11-28",
   },
   {
@@ -304,6 +311,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     text: "The nail art Zara created for my wedding day was beyond my wildest dreams. She listened so carefully to my vision and executed it perfectly. Luxe Salon made the whole experience feel truly special.",
     service: "Nail Art Design",
+    avatar: "/images/avatars/avatar3.jpg",
     date: "2024-12-02",
   },
   {
@@ -313,6 +321,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     text: "As someone who values efficiency and quality, Luxe Salon delivers on both. Marcus's colour work is exceptional — I walked out looking and feeling like a million dollars. The online booking is perfect.",
     service: "Signature Cut & Style",
+    avatar: "/images/avatars/avatar4.jpg",
     date: "2024-12-10",
   },
   {
@@ -322,6 +331,7 @@ export const TESTIMONIALS: Testimonial[] = [
     rating: 5,
     text: "Elara's massage therapy is genuinely life-changing. After years of tension headaches, her scalp and shoulder massage finally brought me relief. The ambiance at Luxe Salon is pure luxury.",
     service: "Head & Shoulder Massage",
+    avatar: "/images/avatars/avatar5.jpg",
     date: "2024-12-18",
   },
 ];

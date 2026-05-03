@@ -90,6 +90,16 @@ export default function Hero() {
               className="relative rounded-sm overflow-hidden aspect-[4/5]"
               style={{ backgroundColor: "var(--surface-2)", border: "1px solid var(--border)" }}
             >
+              <motion.img
+                initial={{ scale: 1.1, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 1.2, ease: [0.22, 1, 0.36, 1] }}
+                src="/images/hero.png"
+                alt="Luxury Salon Interior"
+                className="absolute inset-0 w-full h-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent pointer-events-none" />
+              
               <div className="absolute inset-0 flex items-end justify-start p-8 z-10">
                 <div className="card-gold rounded-sm w-full p-6">
                   <p className="font-serif italic text-[16px] leading-relaxed" style={{ color: "var(--text)" }}>

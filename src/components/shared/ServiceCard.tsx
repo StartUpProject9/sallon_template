@@ -19,14 +19,26 @@ export default function ServiceCard({ service, selected, onSelect }: ServiceCard
       role={onSelect ? "button" : undefined}
       tabIndex={onSelect ? 0 : undefined}
       onKeyDown={(e) => e.key === "Enter" && onSelect?.(service)}
-      className="group relative rounded-sm cursor-pointer transition-all duration-300"
+      className="group relative rounded-sm cursor-pointer transition-all duration-300 overflow-hidden"
       style={{
         backgroundColor: "var(--surface)",
         border: `1px solid ${selected ? "var(--gold-border)" : "var(--border)"}`,
         boxShadow: selected ? "0 0 0 1px var(--gold-alpha)" : "none",
-        padding: "1.5rem",
       }}
     >
+      {/* Image if provided */}
+      {service.image && (
+        <div className="relative aspect-video overflow-hidden">
+          <img
+            src={service.image}
+            alt={service.name}
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+        </div>
+      )}
+
+      <div style={{ padding: "1.5rem" }}>
       {/* Popular badge */}
       {service.popular && (
         <div className="absolute top-4 right-4">
@@ -81,6 +93,7 @@ export default function ServiceCard({ service, selected, onSelect }: ServiceCard
           opacity: selected ? 1 : 0,
         }}
       />
+      </div>
     </div>
   );
 }

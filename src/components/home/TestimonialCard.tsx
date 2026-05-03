@@ -36,14 +36,18 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
       {/* Author */}
       <div className="mt-auto pt-5 flex items-center gap-3.5" style={{ borderTop: "1px solid var(--border-2)" }}>
         <div
-          className="w-10 h-10 rounded-full flex items-center justify-center font-display font-semibold text-[15px]"
+          className="w-10 h-10 rounded-full flex items-center justify-center font-display font-semibold text-[15px] overflow-hidden"
           style={{
             backgroundColor: "var(--surface-2)",
             border: "1px solid var(--border)",
             color: "var(--gold)",
           }}
         >
-          {testimonial.name.charAt(0)}
+          {testimonial.avatar ? (
+            <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover" />
+          ) : (
+            testimonial.name.charAt(0)
+          )}
         </div>
         <div>
           <p className="text-[13px] font-semibold" style={{ color: "var(--text)" }}>{testimonial.name}</p>
