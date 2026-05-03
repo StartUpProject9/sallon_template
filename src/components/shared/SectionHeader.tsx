@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion } from "framer-motion"; // eslint-disable-line @typescript-eslint/no-unused-vars
 
 interface SectionHeaderProps {
   label: string;

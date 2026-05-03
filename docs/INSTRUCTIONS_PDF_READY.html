@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aurore Luxe Salon - Documentation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #D4AF37;
+            --black: #080808;
+            --gray: #F5F5F5;
+            --text: #333;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background: var(--gray);
+        }
+        .page {
+            width: 800px;
+            margin: 40px auto;
+            background: white;
+            padding: 80px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        header {
+            border-bottom: 2px solid var(--gold);
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 36px;
+            color: var(--black);
+            margin: 0;
+        }
+        .tagline {
+            color: var(--gold);
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 12px;
+        }
+        h2 {
+            font-family: 'Playfair Display', serif;
+            color: var(--black);
+            border-left: 4px solid var(--gold);
+            padding-left: 15px;
+            margin-top: 40px;
+        }
+        code {
+            background: #f4f4f4;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-family: monospace;
+        }
+        pre {
+            background: #1e1e1e;
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 12px;
+            color: #999;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        @media print {
+            body { background: white; }
+            .page { box-shadow: none; margin: 0; width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div class="tagline">Premium Next.js Template</div>
+            <h1>Aurore Luxe Salon</h1>
+        </header>
+
+        <section>
+            <h2>1. Getting Started</h2>
+            <p>Welcome to Aurore Luxe Salon! This premium template is built with Next.js 15, Tailwind CSS 4, and TypeScript. To get started, follow these simple steps:</p>
+            <pre>npm install
+npm run dev</pre>
+            <p>Your site will be live at <code>http://localhost:3000</code>.</p>
+        </section>
+
+        <section>
+            <h2>2. Customization Guide</h2>
+            <p>The template is designed for easy white-labeling. All key settings are centralized:</p>
+            <ul>
+                <li><strong>Text & Data</strong>: Modify <code>/src/data/index.ts</code> to change services, pricing, and team members.</li>
+                <li><strong>Branding</strong>: Update <code>/src/app/globals.css</code> to change the primary gold color and background tokens.</li>
+                <li><strong>Images</strong>: All assets are located in <code>/public/images/</code>. Simply replace them with your own high-resolution photos.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Multi-Step Booking</h2>
+            <p>The booking system is built with a custom state machine. You can find the logic in <code>/src/app/booking/page.tsx</code>. It handles service selection, stylist assignment, and time slot generation automatically.</p>
+        </section>
+
+        <section>
+            <h2>4. Deployment</h2>
+            <p>We recommend deploying to <strong>Vercel</strong> for the best performance. Simply connect your GitHub repository and Vercel will handle the rest.</p>
+        </section>
+
+        <div class="footer">
+            &copy; 2026 Aurore Luxe Salon Template. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

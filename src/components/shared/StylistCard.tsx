@@ -1,6 +1,7 @@
 "use client";
 
 import { Star, Award } from "lucide-react";
+import Image from "next/image";
 import type { StylistCardProps } from "@/types";
 
 export default function StylistCard({ stylist, selected, onSelect }: StylistCardProps) {
@@ -25,10 +26,11 @@ export default function StylistCard({ stylist, selected, onSelect }: StylistCard
         />
 
         {/* Image */}
-        <img
+        <Image
           src={stylist.image}
           alt={stylist.name}
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+          fill
+          className="object-cover transition-transform duration-700 group-hover:scale-105"
         />
 
         {/* Featured badge */}

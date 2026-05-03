@@ -1,4 +1,5 @@
 import { Star, Quote } from "lucide-react";
+import Image from "next/image";
 import type { TestimonialCardProps } from "@/types";
 
 export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
@@ -44,7 +45,7 @@ export default function TestimonialCard({ testimonial }: TestimonialCardProps) {
           }}
         >
           {testimonial.avatar ? (
-            <img src={testimonial.avatar} alt={testimonial.name} className="w-full h-full object-cover" />
+            <Image src={testimonial.avatar} alt={testimonial.name} width={40} height={40} className="w-full h-full object-cover" />
           ) : (
             testimonial.name.charAt(0)
           )}
